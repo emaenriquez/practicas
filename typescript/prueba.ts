@@ -78,3 +78,130 @@ function saludar(persona: {nombre:string,edad:number}){
     return `hola soy ${nombre} y tengo ${edad}`
 
 }
+
+
+type ModeloAutos = `${string} ${string}`
+
+type AutosMoviles = {
+    modelo: ModeloAutos,
+    readonly marca: string,
+    id?: number
+}
+
+function createAutos2(autos:AutosMoviles): AutosMoviles {
+    let {modelo,marca} = autos
+    return {
+        modelo,
+        marca,
+        id:1
+    }
+}
+
+let tessla: AutosMoviles = {modelo:'f-14 2003',marca:'tessla'}
+
+
+let valoresPosibles: string | number;
+
+
+valoresPosibles = 'hola mundo'
+
+if(valoresPosibles === 'string'){
+    console.log(' valoresPosibles es un tipo string');
+} else {
+    console.log('valoresPosibles es un tipo number')
+}
+
+
+// intersecion types
+
+type PersonajePrincipal = {
+    name: string,
+    edad: number,
+    poder: number,
+    powerUp: string
+}
+
+type PersonajeSecundario = {
+    name:string,
+    edad: number,
+    poder: number
+}
+
+type Pareja = PersonajePrincipal & PersonajeSecundario
+
+// type indexing
+type Planetas = {
+    nombre: string,
+    distancia: {
+        distanciakm: number,
+    }
+}
+
+const distanciaPlaneta: Planetas['distancia'] = {
+    distanciakm: 100000,
+}
+
+// type from value
+
+// Objeto original
+const planetas = {
+    planeta: 'tierra',
+    pais: 'Argentina'
+}
+
+// Crear un tipo llamado Address con la estructura de planetas
+type Address = typeof planetas;
+
+// Ahora Address es equivalente a:
+// type Address = {
+//     planeta: string;
+//     pais: string;
+// }
+
+// Puedes usar el tipo Address para declarar variables
+const miDireccion: Address = {
+    planeta: 'tierra',
+    pais: 'Argentina'
+}
+
+// También podrías usar el tipo para inferir automáticamente el tipo de otras variables
+const otraDireccion = {
+    planeta: 'marte',
+    pais: 'Otrolandia'
+} as Address;
+
+// En este caso, TypeScript inferirá que otraDireccion tiene el tipo Address
+
+
+// Definir la función creadorPlanetas
+function creadorPlanetas() {
+    return {
+        planeta: 'tierra',
+        pais: 'argentina'
+    };
+}
+
+// Utilizar ReturnType para crear el tipo address2
+type address2 = ReturnType<typeof creadorPlanetas>;
+
+// Ahora address2 es equivalente a:
+// type address2 = {
+//     planeta: string;
+//     pais: string;
+// }
+
+// Puedes usar el tipo address2 para declarar variables
+const miDireccion1: address2 = {
+    planeta: 'tierra',
+    pais: 'argentina'
+};
+
+// También podrías usar el tipo para inferir automáticamente el tipo de otras variables
+const otraDireccion2 = creadorPlanetas();
+
+
+const idiomas: string[] = []
+
+const puntaje: number[] = []
+
+const key_and_value:(string | number)[] = []

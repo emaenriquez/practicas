@@ -299,10 +299,6 @@ const gameBoard: gameBoard = [
 
 gameBoard[0][1] = 'x'
 
-<<<<<<< HEAD
 type RBG = [number,number,number] 
 
 const rbg: RBG = [255,255,255]
-=======
-type RBG = [number,number,number] 
->>>>>>> 6092b74091be2d22ab7431947e56711f84d4dd7f
