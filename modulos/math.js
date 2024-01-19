@@ -29,9 +29,9 @@ export class Math{
 //     edad: 20
 // }
 
-export default {
-    sumar,
-    restar,
-    dividir,
-    multiplicar,
-}
+// export default {
+//     sumar,
+//     restar,
+//     dividir,
+//     multiplicar,
+// }
