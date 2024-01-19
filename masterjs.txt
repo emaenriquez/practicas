@@ -1,0 +1,51 @@
+
+Apertura del capitulo 14
+Prototipos
+Caracteristicas de los prototipos
+Dunder Proto
+Sobrescribir _proto_ vs método
+Modo estricto (Strict Mode)
+Funciones flecha
+This contextual
+Recursividad
+Clausuras (o closures)
+Parametro Rest
+Destructuración (ver INFO EXTRA 1.1)
+Operador ternario (o condicional)
+
+
+APIs
+Objeto Date
+LocalStorage y SessionStorage
+Definir idioma con LocalStorage
+Drag & Drop
+Texturizador con Drag & Drop
+Geolocalization
+History API
+FileReader
+Cargar galería dinámicamente
+FileReader + Drag & Drop
+IndexedDB
+IndexedDB + Drag & Drop
+
+
+Apertura del capitulo 16
+MatchMedia
+Intersection Observer
+Lazy Load
+Notifications 
+Web Workers
+Same Origin Politic
+Objeto Navigator
+Memoization
+Caché
+Service Workers
+Reto del Chat Realtime
+Cachear sitio web y mostrarlo offline
+Cookies
+Crear aviso de uso de cookies
+Objeto Screen
+Objeto Canvas
+Crear un web paint
+Próximo nivel y felicitaciones
+Agradecimientos especiales
