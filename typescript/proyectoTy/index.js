@@ -32,3 +32,21 @@ function saludar(nombre, edad) {
 }
 saludar('emanuel', '20');
 let diferentes = true;
+let numeros1 = [1, 2, 3, 4, 5, 6, 7];
+let cadenas1 = ['hola', 'mundo'];
+console.log(numeros1.slice(0, 4));
+cadenas1.indexOf('mundo');
+let programador = {
+    nombre: 'emanuel',
+    edad: 20,
+    tecnologias: ['javascript', 'react js', 'svetle'],
+    tomaMate: true
+};
+programador = {
+    nombre: 'david',
+    edad: 21,
+    tecnologias: ['c++'],
+    tomaMate: false
+};
+console.log(programador.tecnologias[0].toUpperCase());
+// type para tipar objectos
